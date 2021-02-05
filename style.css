@@ -1,0 +1,62 @@
+:root {
+    font-size: 10px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .main__container {
+    margin: 5% auto;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .information__panel {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+  
+  .label {
+    font-size: 15px;
+  }
+  
+  .button {
+    cursor: pointer;
+  }
+  
+  .playing__field {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: darkcyan;
+  }
+  
+  .chip {
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    border: solid rgb(12, 0, 0) 1px;
+    font-size: 7rem;
+    text-align: center; 
+    padding-top: 20px;
+    background-image: url(assets/bg-chip.jpg);
+    border-radius: 10%;
+    cursor: 	default;
+    user-select: none;
+  }
+  .empty {
+    opacity: 0;
+  }
+  /*.dragged {
+    box-shadow: 4px 3px 8px rgba(0,0,0,0.5);
+  }*/
+  .dragged:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 20px greenyellow;
+  }
